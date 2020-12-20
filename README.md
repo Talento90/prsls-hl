@@ -1,2 +1,3 @@
 # prsls-hl
-Production-Ready Serverless workshop at HL
+
+Production-Ready Serverless workshop for HL.
