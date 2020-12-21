@@ -99,7 +99,7 @@ module.exports.handler = async (event, context) => {
 
 3. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 Reload the `index.html` and it should still work. But if you curl the `/restaurants` endpoint you should see
 

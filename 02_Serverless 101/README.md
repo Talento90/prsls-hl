@@ -28,25 +28,13 @@ Follow the instruction and install the CLI from [http://serverless.com/](http://
 
     `npm install --save-dev serverless`
 
-    Add `sls` to npm scripts by editing your `package.json` so your `scripts` section looks like this:
-
-    ```json
-      "scripts": {
-        "sls": "serverless"
-      },
-    ```
-
-    Now you can run serverless using `npm run sls [-- <args>...]`
-
-    The special option `--` is used to delimit the end of the options for `npm run` and pass all the arguments after the `--` directly to your script.
-
-    **IMPORTANT: there needs to be a whitespace after `--`.** e.g. `npm run sls -- create` instead of `npm run sls --create`
+    Now you can run serverless using `npx sls [<args>...]`
 
     > _Pro tip:_ Most examples gives steps to install and run Serverless Framework globally (allowing you to directly call `serverless` in your terminal). However, global package dependency will likely to cause issues in the future between two projects depending on incompatible major versions, especially when used by build and deploy steps on your CI.
 
 4. Create nodejs Serverless project using one of the default templates:
 
-    `npm run sls -- create --template aws-nodejs`
+    `npx sls create --template aws-nodejs`
 
     See more information about `serverless create` command on [CLI documentation](https://serverless.com/framework/docs/providers/aws/cli-reference/create/) page.
 </p></details>
@@ -89,7 +77,7 @@ This maps an API Gateway endpoint as the event source for our Lambda function.
 
 1. Run `invoke local` command:
 
-    `npm run sls -- invoke local --function hello`
+    `npx sls invoke local --function hello`
 
     See more information about `invoke local` command on [CLI documentation](https://serverless.com/framework/docs/providers/aws/cli-reference/invoke-local/) page.
 
@@ -108,7 +96,7 @@ This maps an API Gateway endpoint as the event source for our Lambda function.
 
 1. Run `deploy` command:
 
-    `npm run sls -- deploy`
+    `npx sls deploy`
 
     See more information about `deploy` command on [CLI documentation](https://serverless.com/framework/docs/providers/aws/cli-reference/deploy/) page.
 
@@ -146,7 +134,7 @@ Congratulations! You have successfully successfully created and deployed your fi
 <details>
 <summary><b>Deploy to another stage/environment</b></summary><p>
 
-1. Deploy the project to a `test` stage (aka environment) with `npm run sls -- deploy --stage test`
+1. Deploy the project to a `test` stage (aka environment) with `npx sls deploy --stage test`
 
 2. Go to API Gateway console to see that another API has been created for the `test` stage
 
@@ -163,7 +151,7 @@ Congratulations! You have successfully successfully created and deployed your fi
 
 2. Modify the `serverless.yml` and add descriptions to the functions
 
-3. Deploy the functions with `npm run sls -- deploy`
+3. Deploy the functions with `npx sls deploy`
 
 4. Go to the Lambda console to see the functions have been updated with descriptions
 
@@ -176,7 +164,7 @@ The Serverless framework enforces a naming convention, but you can override the 
 
 1. Consult the [Serverless framework docs](https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/) to see how you can override function names
 
-2. Deploy the functions with `npm run sls -- deploy`
+2. Deploy the functions with `npx sls deploy`
 
 3. Go to the Lambda console to see the functions have been renamed
 
@@ -185,7 +173,7 @@ The Serverless framework enforces a naming convention, but you can override the 
 <details>
 <summary><b>Removing the project</b></summary><p>
 
-1. Delete the deployed functions and APIs with `npm run sls -- remove`
+1. Delete the deployed functions and APIs with `npx sls remove`
 
 2. Go to the Lambda console to see the deployed functions are deleted
 

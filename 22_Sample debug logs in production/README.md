@@ -86,7 +86,7 @@ and see that all the tests are still passing.
 
 4. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 </p></details>
 
@@ -109,7 +109,7 @@ logLevel:
 
 then redeploy
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 2. Now reload the homepage a few times and you'll notice that you no longer see the debug log messages in the `get-index` and `get-restaurants` functions' logs.
 
@@ -127,7 +127,7 @@ environment:
 
 then redeploy
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 3. Now reload the homepage a few more times, and you should occassionally see debug log messages in the logs for the `get-index` and `get-restaurants` functions.
 

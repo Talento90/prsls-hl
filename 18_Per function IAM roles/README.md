@@ -105,7 +105,7 @@ iamRoleStatements:
 
 7. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 8. Run the acceptance tests to make sure they're still working
 

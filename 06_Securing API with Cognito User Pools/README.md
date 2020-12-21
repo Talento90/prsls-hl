@@ -62,7 +62,7 @@ module.exports.handler = async (event, context) => {
 
 4. Deploy the serverless project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 5. Curl the `/restaurants/search` endpoint for the `cartoon` theme (don't forget to replace the url with the one you deployed)
 
@@ -135,7 +135,7 @@ search-restaurants:
 
 2. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 3. Curl the `/restaurants/search` endpoint for the `cartoon` theme
 
@@ -710,7 +710,7 @@ module.exports.handler = async (event, context) => {
 
 4. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 5. Go to the `index.html` in the browser
 

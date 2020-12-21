@@ -31,7 +31,7 @@ jobs:
       - checkout
       - node/with-cache:
           steps:
-            - run: npm run sls -- deploy
+            - run: npx sls deploy
   acceptance-test:
     docker:
       - image: circleci/node

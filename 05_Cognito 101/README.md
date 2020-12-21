@@ -292,7 +292,7 @@ Outputs:
 <details>
 <summary><b>Deploy the project</b></summary><p>
 
-1. Run `npm run sls -- deploy` to deploy the new resources. After the deployment finishes, you should see the new Cognito User Pool that you added via CloudFormation.
+1. Run `npx sls deploy` to deploy the new resources. After the deployment finishes, you should see the new Cognito User Pool that you added via CloudFormation.
 
 ![](/images/mod05-014.png)
 

@@ -29,7 +29,7 @@ EventBusName:
 
 4. Deploy the project.
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 This will provision an EventBridge bus called `order_events_dev`.
 
@@ -239,7 +239,7 @@ Time:        5.431s
 
 5. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 </p></details>
 
@@ -870,7 +870,7 @@ const view = {
 
 5. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 Load the landing page in the browser and click on one of the restaurants to order (if your login token has expired then you'll have to sign in again)
 
@@ -902,7 +902,7 @@ RestaurantNotificationTopicArn:
 
 3. Deploy the project to provision the SNS topic.
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 4. Add a file `notify-restaurant.js` in the `functions` folder
 
@@ -1230,7 +1230,7 @@ While working on these changes, we don't have a way to check what our functions 
 
 1. Deploy the project.
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 2. Use the `lumigo-cli` to peek at both the SNS topic and the EventBridge bus.
 

@@ -34,7 +34,7 @@
 
 4. Create nodejs Serverless project using one of the default templates. **NOTE** there is a whitespace AFTER `--`, this is **REQUIRED**, it's a way to tell `npm run` that everything that comes after `--` should be passed as arguments to the thing that's associated with the `sls` script we set up in the previous step
 
-    `npm run sls -- create --template aws-nodejs`
+    `npx sls create --template aws-nodejs`
 
     See more information about `serverless create` command on [CLI documentation](https://serverless.com/framework/docs/providers/aws/cli-reference/create/) page.
 
@@ -188,7 +188,7 @@ And since the variable `html` is declared and assigned OUTSIDE the handler funct
 
 1. Run `deploy` command:
 
-    `npm run sls -- deploy`
+    `npx sls deploy`
 
     See more information about `deploy` command on [CLI documentation](https://serverless.com/framework/docs/providers/aws/cli-reference/deploy/) page.
 
@@ -328,7 +328,7 @@ There are other configurations available, but they're needed here. For more deta
 
 Ok, now let's deploy the serverless project again (so CloudFormation provisions the table):
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 After deployment finishes, the DynamoDB table would now be provisioned.
 
@@ -375,7 +375,7 @@ Make sure the indentations are exactly the same.
 
 3. Deploy the project again
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 and check in the CloudFormation console to make sure that you see the `RestaurantsTableName` in the stack outputs
 
@@ -413,7 +413,7 @@ plugins:
 
 **IMPORTANT**: `plugins` should be at the same level as `provider`, `functions` and `resources`, that is, it should have *NO INDENTATION*.
 
-3. Run `npm run sls -- export-env`. This command should generate a `.env` file in your project root, and the file content should look something like this:
+3. Run `npx sls export-env`. This command should generate a `.env` file in your project root, and the file content should look something like this:
 
 `restaurants_table=workshop-yancui-dev-RestaurantsTable-1Y097GF7QLUIX`
 
@@ -522,7 +522,7 @@ This adds the `dynamodb:scan` permission to the Lambda execution role.
 
 2. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 </p></details>
 
@@ -780,7 +780,7 @@ Notice the `#{...}` values in that string. This is the syntax that the `serverle
 
 7. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 Reload the `index.html` and you should see something like the following
 

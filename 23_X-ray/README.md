@@ -63,7 +63,7 @@ This is courtesy of the `serverless-iam-roles-per-function` plugin, and tells th
 
 4. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 5. Load up the landing page, and place an order. Then head to the X-Ray console and see what you get.
 
@@ -145,7 +145,7 @@ This allows us to trace the calls to SNS and EventBridge in the `notify-restaura
 
 6. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 7. Load up the landing page, and place an order. Then head to the X-Ray console and see what you get now.
 
@@ -173,7 +173,7 @@ AWS_NODEJS_CONNECTION_REUSE_ENABLED: 1
 
 and redeploy
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 9. Reload the homepage a couple of times, and look at the traces for the `get-restaurants` function. Notice how much faster the subsequent invocations are! The effects are additive too, as every single request through the AWS SDK required HTTPs handshake...
 
@@ -199,7 +199,7 @@ AWSXRay.captureHTTPsGlobal(require('https'))
 
 2. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 3. Load up the landing page, and place an order. Then head to the X-Ray console and now you can see the traces for `get-index` and `get-restaurants` function in one place.
 

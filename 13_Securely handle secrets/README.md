@@ -142,7 +142,7 @@ iamRoleStatements:
 
 2. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 3. Run the acceptance to make sure everything is still working
 
@@ -209,7 +209,7 @@ Click `Save Changes`
 
 8. Redeploy the project to force the code to reload the secret. Add the `--force` flag, otherwise Serverless framework might skip the deployment since we haven't changed anything.
 
-`npm run sls -- deploy --force`
+`npx sls deploy --force`
 
 9. Run the acceptance test again.
 
@@ -242,7 +242,7 @@ Time:        3.768s, estimated 5s
 
 10. Check the logs for this function
 
-`npm run sls -- logs -f search-restaurants`
+`npx sls logs -f search-restaurants`
 
 and see the `AccessDeniedException`
 
@@ -281,7 +281,7 @@ This special syntax `${ssm:...}` is how we can reference parameters in SSM direc
 
 5. Redeploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 6. Rerun the acceptance test
 

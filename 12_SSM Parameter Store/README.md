@@ -336,7 +336,7 @@ iamRoleStatements:
 
 2. Deploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 3. Run the acceptance to make sure everything is still working
 
@@ -470,7 +470,7 @@ If this is something you need, then please let me konw and I can publish my Clou
 
 3. Deploy the project.
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 And you should now see the parameter in SSM parameter store.
 

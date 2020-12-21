@@ -75,7 +75,7 @@ Time:        4.283s
 
 5. Redeploy the project.
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 6. Once the deployment is done, load the page. And then open the X-Ray console to make sure that the X-Ray tracing is still working.
 
@@ -120,7 +120,7 @@ const EventBridge = require('aws-sdk/clients/eventbridge')
 
 4. Redeploy
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 and place a few orders, and then check the logs for `place-order` and `notify-restaurant`. You should see on a few occassions (remember, debug logs are sampled at 10%) that debug logs are enabled on the whole transaction and that both functions have the same `x-correlation-id`.
 

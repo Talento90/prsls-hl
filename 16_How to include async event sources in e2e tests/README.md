@@ -138,7 +138,7 @@ Notice that the `IsE2eTest` condition can be used on stack outputs too. If it's 
 
 7. Deploy the project.
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 This will provision a SQS queue and subscribe it to the SNS topic.
 
@@ -695,7 +695,7 @@ Note that `Statement` can take a single item, or an array. So what we did here i
 
 3. Redeploy the project
 
-`npm run sls -- deploy`
+`npx sls deploy`
 
 4. Go to the site, and place a few orders.
 
