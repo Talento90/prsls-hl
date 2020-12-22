@@ -70,7 +70,7 @@ Log.debug('getting restaurants from DynamoDB...', {
 })
 ```
 
-And then on ln21, replace
+And then on ln22, replace
 
 ```javascript
 console.log(`found ${resp.Items.length} restaurants`)
