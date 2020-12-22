@@ -51,7 +51,8 @@ But we need to make sure when we distribute the secret to our application, we do
   names: {
     secretString: `/${serviceName}/${stage}/search-restaurants/secretString`
   },
-  setToContext: true
+  setToContext: true,
+  throwOnFailedCall: true
 }))
 ```
 
@@ -84,7 +85,8 @@ module.exports.handler = middy(async (event, context) => {
   names: {
     secretString: `/${serviceName}/${stage}/search-restaurants/secretString`
   },
-  setToContext: true
+  setToContext: true,
+  throwOnFailedCall: true
 }))
 ```
 
