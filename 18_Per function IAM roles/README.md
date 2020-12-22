@@ -9,7 +9,7 @@
 
 1. Install `serverless-iam-roles-per-function` as dev dependency
 
-`npm install --save-dev serverless-iam-roles-per-function`
+`npm install --save-dev serverless-iam-roles-per-function@next`
 
 2. Modify `serverless.yml` and add it as a plugin
 
