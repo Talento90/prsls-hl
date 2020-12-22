@@ -21,7 +21,7 @@ Now we need to change all the places where we're using `console.log`.
 const Log = require('@dazn/lambda-powertools-logger')
 ```
 
-on ln19, replace
+on ln20, replace
 
 ```javascript
 console.log(`loading restaurants from ${restaurantsApiRoot}...`)
