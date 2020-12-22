@@ -35,7 +35,7 @@ Log.debug('getting restaurants...', { url: restaurantsApiRoot })
 
 Notice that the `restaurantsApiRoot` is captured as a separate `url` attribute in the log message. Capturing variables as attributes (instead of baking them into the message) makes them easier to search and filter by.
 
-On ln36, replace
+On ln37, replace
 
 ```javascript
 console.log(`found ${restaurants.length} restaurants`)
